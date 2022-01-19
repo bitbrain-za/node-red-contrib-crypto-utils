@@ -1,28 +1,28 @@
 <script type="text/javascript">
-    RED.nodes.registerType('aes-encrypt',
+    RED.nodes.registerType('aes-decrypt',
     {
         category: 'crypto',
         color: '#84cfa3',
         defaults:
         {
-            name: {value:"aes encrypt"},
+            name: {value:"aes decrypt"},
         },
         inputs:1,
         outputs:1,
         icon: "fa-lock",
         label: function()
         {
-            return this.name||"aes-encrypt";
+            return this.name||"aes-decrypt";
         }
     });
 </script>
 
-<script type="text/html" data-template-name="aes-encrypt">
+<script type="text/html" data-template-name="aes-decrypt">
     <div class="form-row">
         <label for="node-input-name"><i class="icon-tag"></i> Name</label>
         <input type="text" id="node-input-name" placeholder="Name">
     </div>
 </script>
 
-<script type="text/html" data-help-name="aes-encrypt">
+<script type="text/html" data-help-name="aes-decrypt">
 </script>
