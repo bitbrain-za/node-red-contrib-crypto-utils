@@ -14,7 +14,7 @@ module.exports = function (RED) {
 			const decipher = crypto.createDecipheriv(algorithm, key, initVector);
 
 			let decryptedData = decipher.update(encryptedData);
-			decryptedData = Buffer.concat([decrypted, decipher.final()]);
+			decryptedData = Buffer.concat([decryptedData, decipher.final()]);
 			msg.payload = decryptedData;
 			node.send(msg);
 		});
