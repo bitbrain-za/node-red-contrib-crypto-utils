@@ -21,8 +21,8 @@ module.exports = function (RED) {
 
 			msg.payload = 
 			{
-				encryptedData: encryptedData.toString('base64'),
-				initVector: initVector
+				encryptedData,
+				initVector
 			};
 			node.send(msg);
 		});

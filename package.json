@@ -15,7 +15,8 @@
 			"aes-encrypt": "src/aes-encrypt.js",
 			"aes-decrypt": "src/aes-decrypt.js",
 			"rsa-encrypt": "src/rsa-encrypt.js",
-			"rsa-decrypt": "src/rsa-decrypt.js"
+			"rsa-decrypt": "src/rsa-decrypt.js",
+			"sha256": "src/sha256.js"
 		}
 	},
 	"keywords": [
