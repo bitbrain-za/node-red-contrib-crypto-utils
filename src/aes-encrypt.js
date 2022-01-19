@@ -19,7 +19,11 @@ module.exports = function (RED) {
 			let encryptedData = cipher.update(data);
 			encryptedData = Buffer.concat([encryptedData, cipher.final()]);
 
-			msg.payload = encryptedData.toString('base64');
+			msg.payload = 
+			{
+				encryptedData: encryptedData.toString('base64'),
+				initVector: initVector
+			};
 			node.send(msg);
 		});
 	}
