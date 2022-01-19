@@ -11,7 +11,7 @@ module.exports = function (RED) {
 			const initVector = msg.payload.initVector;
 			let encryptedData = Buffer.from(msg.payload.data, 'hex');
 
-			const decipher = crypto.createDecipheriv(algorithm, Securitykey, initVector);
+			const decipher = crypto.createDecipheriv(algorithm, key, initVector);
 
 			let decryptedData = decipher.update(encryptedData);
 			decryptedData = Buffer.concat([decrypted, decipher.final()]);
