@@ -8,7 +8,7 @@ module.exports = function (RED) {
 
 		node.on('input', function (msg) {
 			let key = msg.payload.key;
-			let data = msg.payload.data;
+			let data = Buffer.from(msg.payload.data)
 
 			const initVector = crypto.randomBytes(16);
 			const cipher = crypto.createCipheriv(algorithm, key, initVector);
