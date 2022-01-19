@@ -1,0 +1,33 @@
+{
+	"name": "red-contrib-crypto-utils",
+	"version": "1.0.0",
+	"description": "Some crypto utilities",
+	"main": "aes-encrypt.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/bitbrain-za/node-red-contrib-crypto-utils.git"
+	},
+	"node-red": {
+		"nodes": {
+			"aes-encrypt": "src/aes-encrypt.js",
+			"aes-decrypt": "src/aes-decrypt.js",
+			"rsa-encrypt": "src/rsa-encrypt.js",
+			"rsa-decrypt": "src/rsa-decrypt.js"
+		}
+	},
+	"keywords": [
+		"node-red",
+		"crypto",
+		"aes",
+		"rsa"
+	],
+	"author": "Philip Barlow",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/bitbrain-za/node-red-contrib-crypto-utils/issues"
+	},
+	"homepage": "https://github.com/bitbrain-za/node-red-contrib-crypto-utils#readme"
+}
