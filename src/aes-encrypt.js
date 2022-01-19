@@ -10,10 +10,6 @@ module.exports = function (RED) {
 			let key = msg.payload.key;
 			let data = msg.payload.data;
 
-			if (typeof data == "object") {
-				data = JSON.stringify(data);
-			}
-
 			const initVector = crypto.randomBytes(16);
 			const cipher = crypto.createCipheriv(algorithm, key, initVector);
 			let encryptedData = cipher.update(data);
