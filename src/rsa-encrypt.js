@@ -15,7 +15,7 @@ module.exports = function (RED) {
 			let buffer = Buffer.from(msg.payload.data, 'utf8')
 			let encrypted = crypto.publicEncrypt(publicKey, buffer);
 
-			msg.payload = encrypted.toString('base64');
+			msg.payload = encrypted;
 			node.send(msg);
 		});
 	}

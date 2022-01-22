@@ -8,7 +8,7 @@ module.exports = function (RED) {
 		node.on('input', function (msg) {
 			var privateKey = msg.payload.privateKey;
 
-			let buffer = Buffer.from(msg.payload.data, 'base64')
+			let buffer = Buffer.from(msg.payload.data)
 
 			msg.payload = privateDecrypt(privateKey, buffer);
 

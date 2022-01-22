@@ -1,6 +1,6 @@
 {
 	"name": "red-contrib-crypto-utils",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Some crypto utilities",
 	"main": "aes-encrypt.js",
 	"scripts": {
