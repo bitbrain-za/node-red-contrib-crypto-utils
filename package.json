@@ -1,5 +1,5 @@
 {
-	"name": "red-contrib-crypto-utils",
+	"name": "node-red-contrib-crypto-utils",
 	"version": "1.0.1",
 	"description": "Some crypto utilities",
 	"main": "aes-encrypt.js",
@@ -23,7 +23,8 @@
 		"node-red",
 		"crypto",
 		"aes",
-		"rsa"
+		"rsa",
+		"sha256"
 	],
 	"author": "Philip Barlow",
 	"license": "MIT",
